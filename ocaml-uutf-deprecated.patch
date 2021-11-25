@@ -1,0 +1,11 @@
+--- uutf-1.0.2/src/uutf.ml.orig	2019-02-05 21:29:14.000000000 +0100
++++ uutf-1.0.2/src/uutf.ml	2021-11-23 22:05:04.743311549 +0100
+@@ -31,7 +31,7 @@ let u_rep = Uchar.unsafe_of_int 0xFFFD
+ type encoding = [ `UTF_8 | `UTF_16 | `UTF_16BE | `UTF_16LE ]
+ type decoder_encoding = [ encoding | `US_ASCII | `ISO_8859_1 ]
+ 
+-let encoding_of_string s = match String.uppercase s with      (* IANA names. *)
++let encoding_of_string s = match String.uppercase_ascii s with      (* IANA names. *)
+ | "UTF-8" -> Some `UTF_8
+ | "UTF-16" -> Some `UTF_16
+ | "UTF-16LE" -> Some `UTF_16LE
