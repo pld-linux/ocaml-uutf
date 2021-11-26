@@ -8,10 +8,10 @@
  ]
  depopts: ["cmdliner"]
  conflicts: ["cmdliner" { < "0.9.6"} ]
---- a/pkg/META
-+++ b/pkg/META
+--- uutf-1.0.2/pkg/META.orig	2021-11-26 06:36:05.852321090 +0100
++++ uutf-1.0.2/pkg/META	2021-11-26 06:36:39.647405558 +0100
 @@ -1,6 +1,6 @@
- version = "%%VERSION_NUM%%"
+ version = "1.0.2"
  description = "Non-blocking streaming Unicode codec for OCaml"
 -requires = "bytes uchar"
 +requires = "bytes"
