@@ -111,12 +111,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%{_libdir}/ocaml/uutf/*.a
 %{_libdir}/ocaml/uutf/*.cmi
 %{_libdir}/ocaml/uutf/*.cmt
 %{_libdir}/ocaml/uutf/*.cmti
 %{_libdir}/ocaml/uutf/*.mli
 %if %{with ocaml_opt}
+%{_libdir}/ocaml/uutf/*.a
 %{_libdir}/ocaml/uutf/*.cmx
 %{_libdir}/ocaml/uutf/*.cmxa
 %endif
