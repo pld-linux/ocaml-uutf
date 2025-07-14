@@ -75,8 +75,8 @@ Dokumentacja API biblioteki OCamla uutf.
 
 %prep
 %setup -q -n uutf-%{version}
-%patch0 -p1
-%patch1 -p1
+%patch -P0 -p1
+%patch -P1 -p1
 
 %build
 ocaml pkg/pkg.ml build --with-cmdliner true
